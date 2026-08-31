@@ -54,9 +54,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${plusJakartaSans.variable} scroll-smooth`}>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
       <body className="font-sans antialiased text-brand-petroleo-900 bg-[#F8F9FA] selection:bg-brand-celeste selection:text-white">
         {children}
       </body>
