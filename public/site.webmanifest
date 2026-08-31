@@ -1,0 +1,16 @@
+{
+  "name": "CancelaronMiVuelo",
+  "short_name": "CancelaronMiVuelo",
+  "description": "Reclamos y compensaciones de vuelos en Argentina",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D1B2A",
+  "theme_color": "#0D1B2A",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -17,6 +17,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://cancelaronmivuelo.com"),
   title: "CancelaronMiVuelo | Tu Abogado Experto al Alcance de tu Mano",
   description:
     "Reclamá tu indemnización y compensación por vuelos cancelados, demorados, sobreventa o equipaje en Argentina. Diagnóstico 100% gratuito por WhatsApp impulsado por AbogacIAr.",
@@ -32,6 +33,9 @@ export const metadata: Metadata = {
     "estudio marquez",
   ],
   authors: [{ name: "CancelaronMiVuelo & AbogacIAr" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "CancelaronMiVuelo | Reclamá tu Compensación Aérea",
     description:
@@ -41,9 +45,22 @@ export const metadata: Metadata = {
     locale: "es_AR",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "CancelaronMiVuelo | Reclamá tu Compensación Aérea",
+    description:
+      "Cancelaron tu vuelo. No tus derechos. Diagnóstico legal gratis en minutos con abogados matriculados.",
+  },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
