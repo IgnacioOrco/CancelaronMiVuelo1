@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-plus-jakarta-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-petroleo: #0D1B2A;
+  --color-celeste: #00A8E8;
+  --color-rojo: #FF3B30;
+  --color-humo: #F8F9FA;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-humo);
+  color: var(--color-petroleo);
+  font-family: var(--font-plus-jakarta-sans);
+}
+
+body {
+  background-color: #F8F9FA;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F3F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #BCCCDC;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9FB3C8;
+}
+
+/* Selection */
+::selection {
+  background: #00A8E8;
+  color: #FFFFFF;
+}
+
+/* Glassmorphism helpers */
+.glass-nav {
+  background: rgba(248, 249, 250, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card-dark {
+  background: rgba(13, 27, 42, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
