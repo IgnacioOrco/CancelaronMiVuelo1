@@ -1,6 +1,6 @@
 {
   "name": "CancelaronMiVuelo",
-  "short_name": "CancelaronMiVuelo",
+  "short_name": "MiVuelo",
   "description": "Reclamos y compensaciones de vuelos en Argentina",
   "start_url": "/",
   "display": "standalone",
