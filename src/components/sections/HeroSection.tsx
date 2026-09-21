@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { MessageCircle, ShieldCheck, Clock, CheckCircle, ArrowRight, AlertCircle, Plane, Sparkles, Scale } from "lucide-react";
 import { Button } from "../ui/Button";
@@ -159,48 +160,38 @@ export const HeroSection: React.FC = () => {
               </Button>
             </a>
           </div>
+        </motion.div>
 
-          {/* Trust Guarantees under CTA */}
-          <div className="mt-5 pt-4 border-t border-gray-100 grid grid-cols-1 sm:grid-cols-3 gap-3 text-center sm:text-left text-xs text-brand-petroleo-600 font-medium">
-            <div className="flex items-center justify-center sm:justify-start gap-2">
-              <CheckCircle className="w-4 h-4 text-emerald-500 shrink-0" />
-              <span>Diagnóstico 100% Gratuito</span>
+        {/* Trust Indicator - Single Card: 30 Días (Res. ANAC 774/2025) */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-10 max-w-lg mx-auto"
+        >
+          <div className="bg-white/95 backdrop-blur-sm border border-brand-celeste/30 rounded-2xl p-4 sm:p-5 text-center shadow-card hover:shadow-elevated transition-all flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <div className="w-12 h-12 shrink-0 flex items-center justify-center">
+              <Image
+                src="/brand/shield-logo.png"
+                alt="CancelaronMiVuelo"
+                width={48}
+                height={48}
+                className="object-contain"
+              />
             </div>
-            <div className="flex items-center justify-center sm:justify-start gap-2">
-              <Clock className="w-4 h-4 text-brand-celeste shrink-0" />
-              <span>Respuesta legal en minutos</span>
+            <div className="text-3xl sm:text-4xl font-black text-brand-petroleo-900 tracking-tight shrink-0">
+              30 Días
             </div>
-            <div className="flex items-center justify-center sm:justify-start gap-2">
-              <Scale className="w-4 h-4 text-brand-petroleo shrink-0" />
-              <span>Respaldo Estudio Márquez</span>
+            <div className="text-center sm:text-left">
+              <div className="text-sm font-bold text-brand-petroleo-900 leading-tight">
+                Plazo máximo de respuesta
+              </div>
+              <div className="text-xs font-semibold text-brand-celeste-dark mt-0.5">
+                Res. ANAC 774/2025
+              </div>
             </div>
           </div>
         </motion.div>
-
-        {/* Stats / Proof Counters */}
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-          {[
-            { value: "30 Días", label: "Plazo máximo de respuesta", sub: "Res. ANAC 774/2025" },
-            { value: "100%", label: "Dinero para el pasajero", sub: "Sin comisiones sobre tu indemnización" },
-            { value: "15+", label: "Años de experiencia", sub: "En Derecho Aeronáutico" },
-            { value: "$0", label: "Costo de diagnóstico", sub: "Evaluación legal inicial sin cargo" },
-          ].map((stat, i) => (
-            <div
-              key={i}
-              className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-4 text-center shadow-soft"
-            >
-              <div className="text-2xl sm:text-3xl font-black text-brand-petroleo-900 tracking-tight">
-                {stat.value}
-              </div>
-              <div className="text-xs font-bold text-brand-petroleo-800 mt-0.5">
-                {stat.label}
-              </div>
-              <div className="text-[10px] text-gray-500 mt-0.5">
-                {stat.sub}
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

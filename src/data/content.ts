@@ -123,7 +123,7 @@ export const STEPS: Step[] = [
     stage: "paid",
     title: "Planes",
     tagline: "Elegís tu Nivel de Asistencia",
-    description: "Seleccionás el plan transparente que mejor se ajuste a tus necesidades con precio fijo final en pesos.",
+    description: "Seleccionás el plan transparente que mejor se ajuste a tus necesidades.",
     badge: "Etapa Paga",
     iconName: "Layers"
   },
@@ -141,7 +141,7 @@ export const STEPS: Step[] = [
     stage: "paid",
     title: "Pago",
     tagline: "Pago Único Transparente",
-    description: "Abonás mediante Mercado Pago o Transferencia Bancaria con IVA incluido. Sin comisiones sorpresa a futuro.",
+    description: "Abonás mediante Mercado Pago o Transferencia Bancaria con IVA incluido de forma rápida y segura.",
     badge: "Etapa Paga",
     iconName: "CreditCard"
   },
@@ -257,12 +257,18 @@ export const RULES: Rule[] = [
   {
     number: "04",
     title: "Cero Letra Chica",
-    description: "Precios fijos en pesos argentinos con IVA incluido. No retenemos comisiones sorpresa ni cobramos porcentajes sobre tu indemnización cobrada.",
+    description: "Tarifas claras en pesos argentinos con IVA incluido. Sabés con total transparencia el valor de tu gestión desde el primer instante.",
     iconName: "CheckSquare"
   }
 ];
 
 export const FAQS: FaqItem[] = [
+  {
+    id: "faq-tiempos",
+    category: "plazos",
+    question: "¿Cuánto tiempo tengo para iniciar el reclamo legal por mi vuelo?",
+    answer: "El plazo legal de prescripción para accionar es de hasta 1 año para vuelos de cabotaje (dentro de Argentina, bajo el Código Aeronáutico Argentino) y de hasta 2 años para vuelos internacionales (bajo el Convenio de Montreal). Es fundamental iniciar la consulta cuanto antes para resguardar la prueba y los tickets de gastos."
+  },
   {
     id: "faq-1",
     category: "plazos",
@@ -272,8 +278,8 @@ export const FAQS: FaqItem[] = [
   {
     id: "faq-2",
     category: "costos",
-    question: "¿Por qué trabajan con pago único fijo y no cobrando un porcentaje de lo recuperado?",
-    answer: "Muchas empresas tradicionales cobran entre el 25% y el 40% de tu indemnización final, lo que significa que terminás perdiendo cientos de miles de pesos. Con CancelaronMiVuelo y AbogacIAr abonás un monto fijo y transparente en pesos (IVA incluido), y el 100% de la compensación que pague la aerolínea va directamente a tu cuenta bancaria."
+    question: "¿Cómo funciona el esquema de pago único de los planes?",
+    answer: "Cada plan de CancelaronMiVuelo tiene un precio único, fijo y transparente en pesos argentinos (IVA incluido). Te permite acceder a asesoramiento letrado y modelos formales de intimación sin sorpresas ni costos ocultos en la etapa administrativa."
   },
   {
     id: "faq-3",
@@ -285,13 +291,13 @@ export const FAQS: FaqItem[] = [
     id: "faq-4",
     category: "legal",
     question: "¿Quién respalda legalmente mi reclamo?",
-    answer: "Todos los procesos y modelos legales están diseñados y supervisados por el prestigioso Estudio Márquez & Asociados (especialistas en Derecho Aeronáutico y de Consumo) en conjunto con la tecnología de AbogacIAr. Cada trámite cumple estrictamente con el marco legal argentino."
+    answer: "Todos los procesos y modelos legales están diseñados y supervisados por el Estudio Márquez & Asociados (especialistas en Derecho Aeronáutico y de Consumo) en conjunto con la tecnología de AbogacIAr. Cada trámite cumple estrictamente con el marco legal argentino."
   },
   {
     id: "faq-5",
     category: "legal",
     question: "¿Cómo se protegen mis datos personales y tickets de viaje?",
-    answer: "Implementamos estándares de encriptación de extremo a extremo y cumplimos rigurosamente con la Ley Nacional 25.326 de Protección de Datos Personales. Tus pasajes, tarjetas de crédito y documentos sólo se utilizan con el fin exclusivo de tramitar tu reclamo."
+    answer: "Implementamos estándares de encriptación y cumplimos rigurosamente con la Ley Nacional 25.326 de Protección de Datos Personales. Tus pasajes, constancias y documentos se utilizan con el fin exclusivo de evaluar y tramitar tu reclamo."
   },
   {
     id: "faq-6",

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { SearchCheck, Compass, Lock, CheckSquare, ShieldCheck, Award, Scale, CheckCircle } from "lucide-react";
 import { RULES } from "@/data/content";
@@ -110,8 +111,14 @@ export const TrustSecurity: React.FC = () => {
 
             {/* Right Col: Trust Seal Box */}
             <div className="lg:col-span-5 bg-brand-petroleo-800/90 border border-brand-petroleo-700 p-6 sm:p-7 rounded-2xl flex flex-col items-center text-center space-y-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-brand-celeste to-emerald-400 flex items-center justify-center text-brand-petroleo shadow-lg">
-                <Award className="w-8 h-8" />
+              <div className="relative w-16 h-16 rounded-2xl overflow-hidden shadow-elevated border border-brand-celeste/40 shrink-0">
+                <Image
+                  src="/brand/app-icon.png"
+                  alt="Sello CancelaronMiVuelo"
+                  width={64}
+                  height={64}
+                  className="object-cover"
+                />
               </div>
               <div>
                 <h4 className="text-base font-bold text-white">

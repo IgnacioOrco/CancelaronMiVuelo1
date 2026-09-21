@@ -2,9 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { MessageCircle, ShieldCheck, ArrowRight, Zap, Scale } from "lucide-react";
 import { Button } from "../ui/Button";
-import { ShieldIcon } from "../branding/ShieldIcon";
 import { AbogaciarBadge } from "../branding/AbogaciarBadge";
 import { getWhatsAppLink } from "@/data/constants";
 
@@ -23,9 +23,15 @@ export const FinalCtaSection: React.FC = () => {
           <div className="absolute -top-24 -left-24 w-80 h-80 bg-brand-celeste/20 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-brand-rojo/15 rounded-full blur-3xl pointer-events-none" />
 
-          {/* Central Logo Shield */}
+          {/* Central Official Logo Shield */}
           <div className="flex justify-center mb-6">
-            <ShieldIcon size={64} className="drop-shadow-lg" />
+            <Image
+              src="/brand/shield-logo.png"
+              alt="CancelaronMiVuelo Escudo Oficial"
+              width={80}
+              height={80}
+              className="drop-shadow-2xl object-contain animate-float"
+            />
           </div>
 
           <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-brand-celeste mb-3 block">

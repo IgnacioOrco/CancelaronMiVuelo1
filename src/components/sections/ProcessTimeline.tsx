@@ -80,7 +80,7 @@ export const ProcessTimeline: React.FC = () => {
               Elegís tu plan a precio final en pesos (IVA incluido), adjuntás tus comprobantes y nuestros abogados redactan e intiman formalmente a la aerolínea.
             </p>
             <div className="flex items-center gap-2 text-xs font-bold text-brand-celeste-dark">
-              <CheckCircle2 className="w-4 h-4" /> 100% de la indemnización va directo a tu cuenta
+              <CheckCircle2 className="w-4 h-4" /> Redacción y patrocinio con respaldo letrado
             </div>
           </div>
         </div>

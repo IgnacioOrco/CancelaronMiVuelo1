@@ -36,6 +36,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: "/brand/app-icon.png",
+    shortcut: "/brand/app-icon.png",
+    apple: "/brand/app-icon.png",
+  },
   openGraph: {
     title: "CancelaronMiVuelo | Reclamá tu Compensación Aérea",
     description:
@@ -44,12 +49,21 @@ export const metadata: Metadata = {
     siteName: "CancelaronMiVuelo",
     locale: "es_AR",
     type: "website",
+    images: [
+      {
+        url: "/brand/logo-horizontal.png",
+        width: 1024,
+        height: 341,
+        alt: "CancelaronMiVuelo Logo Oficial",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "CancelaronMiVuelo | Reclamá tu Compensación Aérea",
     description:
       "Cancelaron tu vuelo. No tus derechos. Diagnóstico legal gratis en minutos con abogados matriculados.",
+    images: ["/brand/logo-horizontal.png"],
   },
   robots: {
     index: true,

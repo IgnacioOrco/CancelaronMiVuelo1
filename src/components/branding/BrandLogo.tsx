@@ -1,5 +1,5 @@
 import React from "react";
-import { ShieldIcon } from "./ShieldIcon";
+import Image from "next/image";
 
 interface BrandLogoProps {
   variant?: "light" | "dark";
@@ -16,17 +16,23 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
 
   const sizeStyles = {
     sm: {
-      iconSize: 34,
+      width: 120,
+      height: 40,
+      shieldSize: 34,
       textClass: "text-lg tracking-tight",
       taglineClass: "text-[10px]",
     },
     md: {
-      iconSize: 44,
+      width: 156,
+      height: 52,
+      shieldSize: 44,
       textClass: "text-2xl tracking-tight",
       taglineClass: "text-xs",
     },
     lg: {
-      iconSize: 56,
+      width: 192,
+      height: 64,
+      shieldSize: 56,
       textClass: "text-3xl md:text-4xl tracking-tight",
       taglineClass: "text-sm",
     },
@@ -34,21 +40,45 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
 
   const currentSize = sizeStyles[size];
 
+  // For light mode (e.g. Navbar), use the official horizontal logo
+  if (!isDark) {
+    return (
+      <div className="flex flex-col select-none group cursor-pointer">
+        <Image
+          src="/brand/logo-horizontal.png"
+          alt="CancelaronMiVuelo"
+          width={currentSize.width}
+          height={currentSize.height}
+          priority
+          className="object-contain transition-transform duration-300 group-hover:scale-105 h-auto"
+        />
+        {showTagline && (
+          <span className={`mt-0.5 font-medium text-brand-petroleo-600 ${currentSize.taglineClass}`}>
+            Tu abogado experto al alcance de tu mano
+          </span>
+        )}
+      </div>
+    );
+  }
+
+  // For dark mode (e.g. Footer), use the official shield logo with high-contrast text
   return (
     <div className="flex items-center gap-3 select-none group cursor-pointer">
-      <ShieldIcon size={currentSize.iconSize} className="transition-transform duration-300 group-hover:scale-105" />
+      <Image
+        src="/brand/shield-logo.png"
+        alt="CancelaronMiVuelo Escudo"
+        width={currentSize.shieldSize}
+        height={currentSize.shieldSize}
+        className="object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-105"
+      />
       <div className="flex flex-col">
         <div className={`font-sans font-bold leading-none ${currentSize.textClass}`}>
-          <span className={isDark ? "text-white" : "text-brand-petroleo-900"}>Cancelaron </span>
+          <span className="text-white">Cancelaron </span>
           <span className="text-brand-celeste font-medium">Mi </span>
-          <span className={isDark ? "text-white" : "text-brand-petroleo-900"}>Vuelo</span>
+          <span className="text-white">Vuelo</span>
         </div>
         {showTagline && (
-          <span
-            className={`mt-1 font-medium ${
-              isDark ? "text-brand-petroleo-300" : "text-brand-petroleo-600"
-            } ${currentSize.taglineClass}`}
-          >
+          <span className={`mt-1 font-medium text-brand-petroleo-300 ${currentSize.taglineClass}`}>
             Tu abogado experto al alcance de tu mano
           </span>
         )}

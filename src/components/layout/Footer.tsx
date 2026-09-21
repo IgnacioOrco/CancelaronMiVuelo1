@@ -53,7 +53,7 @@ export const Footer: React.FC = () => {
               Cumplimos estrictamente con la <strong>Ley Nacional 25.326 de Protección de Datos Personales</strong> de la República Argentina. Tus pasajes, comprobantes y datos bancarios están encriptados y protegidos.
             </p>
             <div className="p-3 rounded-xl bg-brand-petroleo-800/80 border border-brand-petroleo-700 text-[11px] text-gray-300">
-              🔒 <strong>Cero Letra Chica</strong>: Pago único en pesos argentinos (IVA incluido). No retenemos porcentaje de tu compensación.
+              🔒 <strong>Transparencia Total</strong>: Pago único en pesos argentinos (IVA incluido) para la gestión administrativa de tu reclamo.
             </div>
           </div>
 

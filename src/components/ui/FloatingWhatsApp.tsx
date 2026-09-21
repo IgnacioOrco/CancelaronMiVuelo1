@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { MessageCircle, X, ShieldCheck } from "lucide-react";
 import { BRAND, getWhatsAppLink } from "@/data/constants";
 
@@ -30,9 +31,15 @@ export const FloatingWhatsApp: React.FC = () => {
             {/* Header */}
             <div className="bg-brand-petroleo text-white p-4 relative flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="relative flex items-center justify-center w-10 h-10 rounded-full bg-[#25D366] text-white">
-                  <MessageCircle className="w-5 h-5" />
-                  <span className="absolute bottom-0 right-0 w-3 h-3 bg-emerald-400 border-2 border-white rounded-full" />
+                <div className="relative flex items-center justify-center w-11 h-11 rounded-full overflow-hidden border-2 border-brand-celeste/40 shrink-0">
+                  <Image
+                    src="/brand/logo-circle.png"
+                    alt="CancelaronMiVuelo"
+                    width={44}
+                    height={44}
+                    className="object-cover w-full h-full"
+                  />
+                  <span className="absolute bottom-0 right-0 w-3 h-3 bg-emerald-400 border-2 border-white rounded-full z-10" />
                 </div>
                 <div>
                   <h4 className="font-bold text-sm leading-tight">Guardia Legal WhatsApp</h4>

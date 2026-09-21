@@ -9,7 +9,7 @@ import { Button } from "../ui/Button";
 import { getWhatsAppLink } from "@/data/constants";
 
 export const FaqSection: React.FC = () => {
-  const [openId, setOpenId] = useState<string | null>("faq-1");
+  const [openId, setOpenId] = useState<string | null>("faq-tiempos");
 
   const toggleFaq = (id: string) => {
     setOpenId(openId === id ? null : id);

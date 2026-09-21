@@ -15,14 +15,14 @@ export const PricingSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <Badge variant="accent" size="md">
-            Cero Comisiones Sorpresa
+          <Badge variant="secondary" size="md">
+            Honorarios Transparentes
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-petroleo-900 tracking-tight">
             Planes Claros y Precios Finales
           </h2>
-          <p className="text-base sm:text-lg text-brand-petroleo-600 leading-relaxed">
-            Pago único en pesos argentinos (IVA incluido). No nos quedamos con el 30% ni el 40% de tu dinero recuperado: <strong>el 100% de la indemnización es tuyo</strong>.
+          <p className="text-base sm:text-lg text-brand-petroleo-600 leading-relaxed font-medium">
+            Pago único en pesos argentinos (IVA incluido).
           </p>
         </div>
 
@@ -125,19 +125,19 @@ export const PricingSection: React.FC = () => {
           })}
         </div>
 
-        {/* Value Comparison Banner */}
+        {/* Legal Backing Guarantee Banner */}
         <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-brand-petroleo-50 border border-brand-petroleo-200 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">
             <h4 className="text-base sm:text-lg font-bold text-brand-petroleo-900">
-              💡 ¿Por qué nuestro modelo de pago único te hace ahorrar miles de pesos?
+              ⚖️ Respaldo Letrado y Rigor Profesional
             </h4>
             <p className="text-xs sm:text-sm text-brand-petroleo-700 max-w-2xl leading-relaxed">
-              Otras plataformas te cobran el 35% de tu compensación. Si la aerolínea te indemniza por $500.000, te descuentan $175.000. Con <strong>CancelaronMiVuelo</strong> pagás un monto fijo y conservás la totalidad de tu dinero.
+              Cada reclamo cuenta con la dirección técnica y patrocinio de abogados matriculados del Estudio Márquez & Asociados, aplicando el marco legal de la Resolución ANAC 774/2025.
             </p>
           </div>
           <div className="shrink-0">
-            <Badge variant="success" size="md" icon={<ShieldCheck className="w-4 h-4" />}>
-              100% de la indemnización es tuya
+            <Badge variant="primary" size="md" icon={<ShieldCheck className="w-4 h-4 text-brand-celeste" />}>
+              Supervisión Letrada 100%
             </Badge>
           </div>
         </div>

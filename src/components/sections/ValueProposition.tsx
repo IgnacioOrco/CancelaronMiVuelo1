@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Scale, ShieldCheck, Smile, Zap, UserCheck, Sparkles, Check } from "lucide-react";
 import { PILLARS } from "@/data/content";
@@ -76,8 +77,14 @@ export const ValueProposition: React.FC = () => {
                   {isWide && (
                     <div className="mt-6 pt-5 border-t border-brand-celeste/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-brand-celeste/5 p-4 rounded-2xl">
                       <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0">
-                          <Check className="w-4 h-4" />
+                        <div className="w-9 h-9 rounded-full overflow-hidden shadow-sm shrink-0 border border-brand-celeste/30">
+                          <Image
+                            src="/brand/logo-circle.png"
+                            alt="CancelaronMiVuelo"
+                            width={36}
+                            height={36}
+                            className="object-cover"
+                          />
                         </div>
                         <span className="text-xs font-bold text-brand-petroleo-800">
                           Cero respuestas genéricas de bots: cada documento es auditado por un letrado matriculado.
@@ -103,9 +110,6 @@ export const ValueProposition: React.FC = () => {
               <h4 className="text-xl sm:text-2xl font-bold leading-tight">
                 No tenés que entender leyes complejas ni discutir con la aerolínea.
               </h4>
-              <p className="text-xs sm:text-sm text-gray-300">
-                Nosotros transformamos tu número de vuelo y tarjeta de embarque en un reclamo formal ejecutable.
-              </p>
             </div>
             <a
               href="#como-funciona"
