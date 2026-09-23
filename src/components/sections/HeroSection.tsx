@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { MessageCircle, ShieldCheck, Clock, CheckCircle, ArrowRight, AlertCircle, Plane, Sparkles, Scale } from "lucide-react";
+import { MessageCircle, ArrowRight, AlertCircle, Sparkles } from "lucide-react";
 import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
 import { AbogaciarBadge } from "../branding/AbogaciarBadge";
@@ -184,10 +184,10 @@ export const HeroSection: React.FC = () => {
             </div>
             <div className="text-center sm:text-left">
               <div className="text-sm font-bold text-brand-petroleo-900 leading-tight">
-                Plazo máximo de respuesta
+                Plazo Máximo que tiene la aerolínea para responder
               </div>
               <div className="text-xs font-semibold text-brand-celeste-dark mt-0.5">
-                Res. ANAC 774/2025
+                Res. Anac 774/2025
               </div>
             </div>
           </div>

@@ -132,7 +132,7 @@ export const PricingSection: React.FC = () => {
               ⚖️ Respaldo Letrado y Rigor Profesional
             </h4>
             <p className="text-xs sm:text-sm text-brand-petroleo-700 max-w-2xl leading-relaxed">
-              Cada reclamo cuenta con la dirección técnica y patrocinio de abogados matriculados del Estudio Márquez & Asociados, aplicando el marco legal de la Resolución ANAC 774/2025.
+              Cada reclamo cuenta con la dirección técnica y patrocinio de las Dras. Elizabeth Marquez- Valeria Denicola y un gran grupo de asociados en este proyecto jurídico masivo, aplicando el marco legal de la Resolución ANAC 774/2025.
             </p>
           </div>
           <div className="shrink-0">

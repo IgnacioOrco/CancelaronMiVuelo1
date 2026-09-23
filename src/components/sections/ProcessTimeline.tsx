@@ -1,16 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { MessageCircle, Plane, FileSearch, Layers, UploadCloud, CreditCard, CheckCircle2, ArrowRight, ShieldCheck } from "lucide-react";
+import { MessageCircle, Plane, FileSearch, Layers, UploadCloud, CreditCard, CheckCircle2 } from "lucide-react";
 import { STEPS } from "@/data/content";
 import { Badge } from "../ui/Badge";
 import { Button } from "../ui/Button";
 import { getWhatsAppLink } from "@/data/constants";
 
 export const ProcessTimeline: React.FC = () => {
-  const [activeStage, setActiveStage] = useState<"all" | "free" | "paid">("all");
-
   const iconMap: Record<string, React.ReactNode> = {
     MessageCircle: <MessageCircle className="w-5 h-5" />,
     Plane: <Plane className="w-5 h-5" />,
@@ -21,68 +19,14 @@ export const ProcessTimeline: React.FC = () => {
     CheckCircle2: <CheckCircle2 className="w-5 h-5" />,
   };
 
-  const freeSteps = STEPS.filter((s) => s.stage === "free");
-  const paidSteps = STEPS.filter((s) => s.stage === "paid");
-
   return (
     <section id="como-funciona" className="py-20 md:py-28 bg-[#F8F9FA] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <Badge variant="primary" size="md">
-            Transparencia Total
-          </Badge>
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-petroleo-900 tracking-tight">
-            Cómo Funciona: Flujo de 7 Pasos
+            COMO FUNCIONA
           </h2>
-          <p className="text-base sm:text-lg text-brand-petroleo-600 leading-relaxed">
-            Dividimos el proceso en dos etapas claras. Evaluás la viabilidad sin pagar nada y avanzás solo si tenés derecho a cobrar.
-          </p>
-        </div>
-
-        {/* Two Stage Overview Banners */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          {/* Bloque 1: Etapa Gratuita */}
-          <div className="bg-white border-2 border-emerald-400/40 rounded-3xl p-6 sm:p-8 shadow-soft relative overflow-hidden">
-            <div className="flex items-center justify-between mb-4">
-              <Badge variant="success" size="md">
-                🟢 ETAPA 1 · 100% GRATUITA
-              </Badge>
-              <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
-                Pasos 1 al 3
-              </span>
-            </div>
-            <h3 className="text-xl font-bold text-brand-petroleo-900 mb-2">
-              Evaluación & Diagnóstico Legal
-            </h3>
-            <p className="text-xs sm:text-sm text-brand-petroleo-700 leading-relaxed mb-4">
-              Ingresás los datos de tu vuelo y te informamos al instante si la aerolínea incumplió la normativa y cuánto dinero podés reclamar. <strong>Cero costo y cero compromiso.</strong>
-            </p>
-            <div className="flex items-center gap-2 text-xs font-bold text-emerald-700">
-              <ShieldCheck className="w-4 h-4" /> Sin necesidad de tarjeta de crédito
-            </div>
-          </div>
-
-          {/* Bloque 2: Etapa Paga */}
-          <div className="bg-white border-2 border-brand-celeste/40 rounded-3xl p-6 sm:p-8 shadow-soft relative overflow-hidden">
-            <div className="flex items-center justify-between mb-4">
-              <Badge variant="secondary" size="md">
-                🔵 ETAPA 2 · PAGO ÚNICO Y FIJO
-              </Badge>
-              <span className="text-xs font-bold text-brand-celeste bg-brand-celeste/10 px-3 py-1 rounded-full">
-                Pasos 4 al 7
-              </span>
-            </div>
-            <h3 className="text-xl font-bold text-brand-petroleo-900 mb-2">
-              Formalización, Intimación & Cobro
-            </h3>
-            <p className="text-xs sm:text-sm text-brand-petroleo-700 leading-relaxed mb-4">
-              Elegís tu plan a precio final en pesos (IVA incluido), adjuntás tus comprobantes y nuestros abogados redactan e intiman formalmente a la aerolínea.
-            </p>
-            <div className="flex items-center gap-2 text-xs font-bold text-brand-celeste-dark">
-              <CheckCircle2 className="w-4 h-4" /> Redacción y patrocinio con respaldo letrado
-            </div>
-          </div>
         </div>
 
         {/* 7-Step Timeline Cards */}

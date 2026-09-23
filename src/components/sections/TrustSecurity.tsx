@@ -82,7 +82,9 @@ export const TrustSecurity: React.FC = () => {
 
               <h3 className="text-2xl sm:text-3xl font-black tracking-tight leading-tight">
                 Patrocinio y Dirección Letrada: <br />
-                <span className="text-brand-celeste">Estudio Márquez & Asociados</span>
+                <span className="text-brand-celeste text-xl sm:text-2xl block mt-1">
+                  Dras. Elizabeth Marquez- Valeria Denicola y un gran grupo de asociados en este proyecto jurídico masivo.
+                </span>
               </h3>
 
               <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">

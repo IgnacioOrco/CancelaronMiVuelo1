@@ -32,7 +32,7 @@ export const ValueProposition: React.FC = () => {
             Motor Conceptual <span className="text-brand-celeste">AbogacIAr</span>
           </h2>
           <p className="text-base sm:text-lg text-brand-petroleo-600 leading-relaxed">
-            "Tu abogado experto al alcance de tu mano". Combinamos la velocidad de la inteligencia artificial con la experiencia y firma de abogados especialistas en derecho aeronáutico.
+            "Tu abogado experto al alcance de tu mano". Combinamos la velocidad de la inteligencia artificial con la experiencia y la firma de abogados con experiencia.
           </p>
         </div>
 

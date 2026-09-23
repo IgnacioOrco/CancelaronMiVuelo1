@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2.5 text-xs text-gray-300">
               <li className="flex items-start gap-2">
                 <ShieldCheck className="w-4 h-4 text-brand-celeste shrink-0 mt-0.5" />
-                <span><strong>Estudio Márquez & Asociados</strong> · Dirección letrada y patrocinio jurídico.</span>
+                <span><strong>Dras. Elizabeth Marquez- Valeria Denicola y un gran grupo de asociados en este proyecto jurídico masivo.</strong></span>
               </li>
               <li className="flex items-start gap-2">
                 <FileText className="w-4 h-4 text-brand-celeste shrink-0 mt-0.5" />

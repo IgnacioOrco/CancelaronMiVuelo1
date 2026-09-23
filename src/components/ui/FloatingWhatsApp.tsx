@@ -79,7 +79,7 @@ export const FloatingWhatsApp: React.FC = () => {
 
               <div className="mt-3 pt-2 border-t border-gray-100 text-center">
                 <span className="text-[10px] text-gray-400">
-                  Respaldo legal Estudio Márquez & Asociados
+                  Respaldo legal Dras. Elizabeth Marquez- Valeria Denicola y un gran grupo de asociados en este proyecto jurídico masivo.
                 </span>
               </div>
             </div>

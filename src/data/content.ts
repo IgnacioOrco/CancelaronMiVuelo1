@@ -94,17 +94,17 @@ export const STEPS: Step[] = [
     number: 1,
     stage: "free",
     title: "Entrada",
-    tagline: "Contacto en 1 Clic",
-    description: "Nos escribís directamente por WhatsApp o iniciás tu consulta desde la plataforma sin registrarte.",
+    tagline: "Contacto en 1 click",
+    description: "Por whatsapp o desde la web",
     badge: "Etapa Gratuita",
     iconName: "MessageCircle"
   },
   {
     number: 2,
     stage: "free",
-    title: "Tu Vuelo",
-    tagline: "Datos Clave del Incidente",
-    description: "Ingresás el número de vuelo, aerolínea, fecha y el problema (cancelación, demora, sobreventa o equipaje).",
+    title: "Tu vuelo",
+    tagline: "Datos del incidente",
+    description: "Ingresas los datos del vuelo y problema",
     badge: "Etapa Gratuita",
     iconName: "Plane"
   },
@@ -239,13 +239,13 @@ export const RULES: Rule[] = [
   {
     number: "01",
     title: "Diagnóstico Primero",
-    description: "No pagás nada si tu caso no tiene amparo legal. Analizamos primero la viabilidad antes de ofrecerte cualquier plan.",
+    description: "Analizamos la viabilidad del reclamo antes de ofrecerte un plan.",
     iconName: "SearchCheck"
   },
   {
     number: "02",
     title: "Sin Callejones Sin Salida",
-    description: "Te decimos la verdad desde el inicio. Si la aerolínea cuenta con causal justificada no imputable, te lo explicamos con claridad.",
+    description: "Te decimos la verdad. Si la aerolínea tiene causa justificada te la explicamos.",
     iconName: "Compass"
   },
   {
@@ -291,7 +291,7 @@ export const FAQS: FaqItem[] = [
     id: "faq-4",
     category: "legal",
     question: "¿Quién respalda legalmente mi reclamo?",
-    answer: "Todos los procesos y modelos legales están diseñados y supervisados por el Estudio Márquez & Asociados (especialistas en Derecho Aeronáutico y de Consumo) en conjunto con la tecnología de AbogacIAr. Cada trámite cumple estrictamente con el marco legal argentino."
+    answer: "Todos los procesos y modelos legales están diseñados y supervisados por las Dras. Elizabeth Marquez- Valeria Denicola y un gran grupo de asociados en este proyecto jurídico masivo (especialistas en Derecho Aeronáutico y de Consumo) en conjunto con la tecnología de AbogacIAr. Cada trámite cumple estrictamente con el marco legal argentino."
   },
   {
     id: "faq-5",
